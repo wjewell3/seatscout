@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-SeatScout V3 - HubSpot Seat Audit Tool (Hybrid Edition)
+SeatScout - HubSpot Seat Audit Tool (Hybrid Edition)
 Combines engagement tracking with CRM activity for maximum accuracy.
 Outputs both console report and CSV file.
 """
@@ -22,7 +22,7 @@ if not TOKEN:
 ENGAGEMENT_WINDOW_DAYS = 60
 CRM_ACTIVITY_WINDOW_DAYS = 30
 LOGIN_INACTIVE_DAYS = 90
-SEAT_COST = 50
+SEAT_COST = 75
 
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",

@@ -1,0 +1,81 @@
+
+======================================================================
+SEATSCOUT V3 - HUBSPOT SEAT AUDIT
+======================================================================
+
+📊 Fetching user data...
+   ✅ Found 2 active users
+   ✅ Found 2 deactivated users
+
+🔐 Checking Enterprise login history...
+   ℹ️  Enterprise login API not available
+
+📞 Scanning engagement activity (last 60 days)...
+   - Scanning all engagements (v1 API)...
+      ℹ️  Skipped 5 sample/demo engagements
+      ✓ Scanned: 3, Attributed: 1, Unattributed: 2
+
+📋 Scanning CRM modifications (last 30 days)...
+   - Scanning contacts...
+   - Scanning deals...
+   - Scanning tickets...
+
+⚠️  DATA QUALITY NOTE
+----------------------------------------------------------------------
+Found 2 engagements with no attributable owner.
+This is normal and doesn't affect accuracy significantly.
+
+======================================================================
+RESULTS
+======================================================================
+
+🚨 HIGH CONFIDENCE - REMOVE IMMEDIATELY (2 users, $150/mo)
+----------------------------------------------------------------------
+1. Test test (blah@gmail.com)
+   Account deactivated - check if seat still assigned
+   Confidence: 100% | Monthly cost: $75
+
+2. Will Jewell (will.jewell@zohomail.com)
+   Account deactivated - check if seat still assigned
+   Confidence: 100% | Monthly cost: $75
+
+⚠️  MEDIUM-HIGH CONFIDENCE (1 users, $75/mo)
+----------------------------------------------------------------------
+1. Sales Rep4 (testuser123@gmail.com)
+   No engagements in 60+ days, no CRM activity in 30+ days
+   Confidence: 80% | Monthly cost: $75
+
+✅ ACTIVE USERS (1 users)
+----------------------------------------------------------------------
+   Users with recent engagement or CRM activity
+   Total attributed engagements: 1
+
+======================================================================
+SUMMARY
+======================================================================
+Total users scanned: 4
+Deactivated: 2
+Medium-high confidence: 1
+Active users: 1
+
+Estimated monthly waste: $225
+Estimated annual waste: $2,700
+
+
+📄 Report saved to: seatscout_report.csv
+
+======================================================================
+ACCURACY & NEXT STEPS
+======================================================================
+⚠️  Standard mode: Enterprise login API not available
+   - Overall accuracy: 70-80%
+   - Reduced to ~50% due to 2 unattributed engagements
+
+💡 NEXT STEPS:
+----------------------------------------------------------------------
+1. Review the CSV report (seatscout_report.csv)
+2. Go to Settings → Users & Teams → Seats in HubSpot
+3. Cross-reference flagged users with HubSpot's 'Last Active' column
+4. For deactivated: reactivate → unassign seat → deactivate
+5. For inactive: Contact to verify if access still needed
+

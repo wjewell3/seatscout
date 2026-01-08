@@ -31,26 +31,26 @@ SeatScout audits your HubSpot account and finds:
 ### Example Output
 
 ```
-🚨 HIGH CONFIDENCE - REMOVE IMMEDIATELY (3 users, $150/mo)
+🚨 HIGH CONFIDENCE - REMOVE IMMEDIATELY (3 users, $225/mo)
 ----------------------------------------------------------------------
 1. John Doe (john@company.com)
    Account deactivated - check if seat still assigned
-   Confidence: 100% | Monthly cost: $50
+   Confidence: 100% | Monthly cost: $75
 
 2. Jane Smith (jane@company.com)
    No login in 120 days, no engagements detected
-   Confidence: 95% | Monthly cost: $50
+   Confidence: 95% | Monthly cost: $75
 
-⚠️  MEDIUM-HIGH CONFIDENCE (2 users, $100/mo)
+⚠️  MEDIUM-HIGH CONFIDENCE (2 users, $150/mo)
 ----------------------------------------------------------------------
 1. Old Employee (old@company.com)
    No engagements in 60+ days, no CRM activity in 30+ days
-   Confidence: 80% | Monthly cost: $50
+   Confidence: 80% | Monthly cost: $75
 
 SUMMARY
 ----------------------------------------------------------------------
-Estimated monthly waste: $250
-Estimated annual waste: $3,000
+Estimated monthly waste: $225
+Estimated annual waste: $2,700
 ```
 
 ---
@@ -120,22 +120,6 @@ python hubspot_user_audit.py
 
 ---
 
-## 📈 Real Results
-
-**Company A** (50 employees, Professional tier):
-- Found 8 unused seats
-- Savings: **$4,800/year**
-
-**Company B** (200 employees, Enterprise tier):
-- Found 23 unused seats (mostly deactivated users)
-- Savings: **$13,800/year**
-
-**Company C** (12 employees, Starter tier):
-- Found 2 unused seats
-- Savings: **$600/year**
-
----
-
 ## 🎯 Use Cases
 
 ### For Finance/Operations Teams
@@ -176,6 +160,15 @@ CSV includes:
 - **No data storage** - We don't store or transmit your data anywhere
 - **Local execution** - Runs entirely on your machine
 - **Open source** - Audit the code yourself
+
+---
+
+## ⚠️ Known Limitations
+   
+   - Cannot detect "view-only" seats that should be upgraded
+   - Doesn't track report/dashboard usage (not exposed via API)
+   - Sequence engagement requires additional scopes
+   - Accuracy varies by HubSpot tier (70-95%)
 
 ---
 

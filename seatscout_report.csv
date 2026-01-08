@@ -1,5 +1,5 @@
 Name,Email,Status,Confidence,Category,Reason,Monthly Cost,Annual Cost
-Test test,blah@gmail.com,Deactivated,100%,DEACTIVATED,Account deactivated - check if seat still assigned,$50,$600
-Will Jewell,will.jewell@zohomail.com,Deactivated,100%,DEACTIVATED,Account deactivated - check if seat still assigned,$50,$600
-Sales Rep4,testuser123@gmail.com,Inactive,80%,MEDIUM-HIGH,"No engagements in 60+ days, no CRM activity in 30+ days",$50,$600
+Test test,blah@gmail.com,Deactivated,100%,DEACTIVATED,Account deactivated - check if seat still assigned,$75,$900
+Will Jewell,will.jewell@zohomail.com,Deactivated,100%,DEACTIVATED,Account deactivated - check if seat still assigned,$75,$900
+Sales Rep4,testuser123@gmail.com,Inactive,80%,MEDIUM-HIGH,"No engagements in 60+ days, no CRM activity in 30+ days",$75,$900
 Will Jewell,jewell.will@gmail.com,Active,0%,ACTIVE,1 engagements (call),$0,$0

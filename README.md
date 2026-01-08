@@ -23,7 +23,7 @@ Most companies waste **20-40% of their HubSpot budget** on unused seats:
 
 SeatScout audits your HubSpot account and finds:
 
-1. **Deactivated users with paid seats** (100% confidence)
+1. **Deactivated users** (HubSpot doesn't auto-remove seats, so these are likely wasting money)
 2. **Users with no login activity** in 90+ days (Enterprise only, 95% confidence)
 3. **Users with no real work** - no calls, meetings, tasks, CRM updates (80% confidence)
 4. **Estimated dollar savings** - monthly and annual waste

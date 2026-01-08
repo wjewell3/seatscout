@@ -257,6 +257,9 @@ def calculate_confidence(owner, login_history, engagement_activity, crm_activity
     user_id = str(owner.get('userId', ''))
     
     if is_deactivated:
+        # 100% confidence this user is deactivated
+        # High probability (~90%) they still have a paid seat due to HubSpot's manual removal process
+        # Users should verify in Settings -> Users & Teams -> Seats
         return (100, 'DEACTIVATED', 'Account deactivated - check if seat still assigned')
     
     last_login = login_history.get(user_id)

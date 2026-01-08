@@ -67,7 +67,7 @@ Estimated annual waste: $2,700
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/seatscout.git
+git clone https://github.com/wjewell3/seatscout.git
 cd seatscout
 
 # Install dependencies
@@ -82,10 +82,11 @@ python hubspot_user_audit.py
 
 ### Getting Your API Key
 
-1. In HubSpot, go to **Settings** → **Integrations** → **Private Apps**
+1. In HubSpot, go to **Settings** → **Integrations** → **Legacy Apps**
 2. Click **"Create a private app"**
 3. Name it "SeatScout" and give it these scopes:
    - `crm.objects.contacts.read`
+   - `crm.objects.companies.read` (optional, for fuller picture)
    - `crm.objects.deals.read`
    - `crm.objects.owners.read`
    - `crm.objects.users.read` (if available)
@@ -169,6 +170,22 @@ CSV includes:
    - Doesn't track report/dashboard usage (not exposed via API)
    - Sequence engagement requires additional scopes
    - Accuracy varies by HubSpot tier (70-95%)
+
+---
+
+## ⚠️ Beta Notice
+
+SeatScout is currently in **beta testing** and has been validated against HubSpot's API documentation and demo accounts. 
+
+**Seeking real-world validation:** If you're a HubSpot admin willing to test this, please:
+1. Run the audit on your account
+2. Share feedback via GitHub Issues or email
+3. Help improve accuracy for the community
+
+### What Needs Validation:
+🔄 Accuracy of confidence scores on real data
+🔄 Performance with large accounts (500+ users)
+🔄 Edge cases in engagement attribution
 
 ---
 

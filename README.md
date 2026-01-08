@@ -217,13 +217,9 @@ To upgrade accuracy: Contact HubSpot to upgrade to Enterprise tier.
 ## 💡 Next Steps After Running
 
 1. **Review the CSV** - Share with your finance team
-2. **Cross-check in HubSpot** - Go to Settings → Users & Teams → Seats
-3. **For deactivated users**: 
-   - Reactivate the user
-   - Unassign their seat
-   - Deactivate again
-4. **For inactive users**: Contact them to verify they still need access
-5. **Set calendar reminder** to run quarterly
+2. **Cross-check in HubSpot** - Go to Settings → Users & Teams → Seats → Remove unassigned seats
+3. **For inactive users**: Contact them to verify they still need access
+4. **Set calendar reminder** to run quarterly
 
 ---
 

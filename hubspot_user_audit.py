@@ -245,7 +245,7 @@ def get_crm_activity(days=30):
                         activity_map[owner_id]['last_date'] = dt
             
             if 'paging' in data and 'next' in data['paging']:
-                after = data['paging']['next']['after']
+                after = int(data['paging']['next']['after'])
             else:
                 has_more = False
     
